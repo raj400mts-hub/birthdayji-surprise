@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday ❤️</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/fireworks-js@2.10.8/dist/index.umd.js"></script>
+</head>
+
+<body class="birthday-page">
+
+    <!-- Floating Animation -->
+    <div id="fireworks"></div>
+    <div class="hearts"></div>
+    <div class="balloons"></div>
+
+    <!-- Gift Screen -->
+    <div id="giftScreen">
+
+        <div class="gift-box">🎁</div>
+
+        <h2>Someone has a surprise for you ❤️</h2>
+
+        <button onclick="openGift()" class="gift-btn">
+            Open My Surprise 🎉
+        </button>
+
+    </div>
+
+    <!-- Hero Photo -->
+    <div id="heroPhoto">
+
+        <img src="images/photo1.jpg" class="hero-img" alt="Hero Photo">
+
+        <h1 class="hero-text">
+            🎉 Happy Birthday ❤️
+        </h1>
+
+    </div>
+
+    <!-- Main Content -->
+    <div class="container" id="mainContent" style="display:none;">
+
+        <h1 class="title">🎉 Happy Birthday ❤️ 🎉</h1>
+
+        <img src="images/photo.jpg" class="photo" alt="Birthday Photo">
+
+        <h2 class="name">Pallavi</h2>
+        <div id="countdown"></div>
+
+        <p class="message" id="typing"></p>
+
+        <button class="btn">
+            💖 Enjoy Your Day 💖
+        </button>
+
+        <h2 class="gallery-title">
+            📸 Beautiful Memories ❤️
+        </h2>
+
+        <div class="gallery">
+
+            <img src="images/photo.jpg" alt="">
+            <img src="images/photo1.jpg" alt="">
+            <img src="images/photo2.jpg" alt="">
+            <img src="images/photo3.jpg" alt="">
+            <img src="images/photo4.jpg" alt="">
+            <img src="images/photo5.jpg" alt="">
+            
+        </div>
+        <section id="final-surprise">
+
+    <h2>💖 A Special Message For You 💖</h2>
+
+    <p class="final-message">
+
+        Dear Pallavi,
+       Thank you for being such a beautiful part of my life.
+        I hope this small surprise brings a smile to your face.
+        May your birthday be filled with love, happiness, success and endless joy.
+        Keep smiling because your smile is truly special.
+        🎂 Happy Birthday Once Again ❤️
+        — it's me
+
+    </p>
+
+</section>
+
+        <button class="music-btn" onclick="toggleMusic()">
+            🎵 Play Music
+        </button>
+
+        <audio id="bgMusic" loop>
+            <source src="music/birthday.mp3" type="audio/mpeg">
+        </audio>
+
+    </div>
+
+    <script src="script.js"></script>
+    <div id="imagePopup" class="popup">
+
+    <span class="closePopup" onclick="closePopup()">&times;</span>
+
+    <img id="popupImage" class="popup-img" src="" alt="">
+
+</div>
+
+</body>
+</html>
